@@ -1,7 +1,7 @@
 # ECUST-openwrt
-用openwrt mwan3实现ECUST校园网、宽带按IP段分流（V6流量全走校园网，教育网cernet、校内地址走校园网，其它走宽带）
 <a href='https://github.com/chinazyq123/ECUST-openwrt'><img alt="GitHub stars" src="https://img.shields.io/github/stars/chinazyq123/ECUST-openwrt?logo=github"></a>
 [![Gitee stars](https://gitee.com/chinazyq/ECUST-openwrt/badge/star.svg?theme=dark)](https://gitee.com/chinazyq/ECUST-openwrt)  
+用openwrt mwan3实现ECUST校园网、宽带按IP段分流（V6流量全走校园网，教育网cernet、校内地址走校园网，其它走宽带）
 
 # 一键安装
 ```
