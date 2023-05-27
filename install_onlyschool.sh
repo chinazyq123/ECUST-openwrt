@@ -7,7 +7,7 @@ opkg update
 opkg install luci-app-mwan3
 
 # 下载配置文件
-wget -O /etc/config/mwan3 https://gitee.com/chinazyq/ECUST-openwrt/raw/master/mwan3_onlyschool
+wget -O /etc/config/mwan3 https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main/mwan3_onlyschool
 
 # 重新启动mwan3服务
 /etc/init.d/mwan3 restart
