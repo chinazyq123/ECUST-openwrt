@@ -6,11 +6,15 @@
 # 一键安装
 1.教育网cernet、校内地址走校园网，其它走宽带
 ```
-wget -O install.sh https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main/install.sh && chmod +x install.sh && ./install.sh
+sudo -i
+bash
+export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && bash -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
 ```
 2.仅校内地址走校园网，其它走宽带
 ```
-wget -O install.sh https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main/install_onlyschool.sh && chmod +x install.sh && ./install.sh
+sudo -i
+bash
+export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && bash -c "$(curl -kfsSl $url/install_onlyschool.sh)" && source /etc/profile &> /dev/null
 ```
 ## 说明
 IP文件夹IP段具有时效性，不保证也不可能长期有效  
