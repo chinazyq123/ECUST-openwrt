@@ -6,15 +6,21 @@
 # 一键安装
 1.教育网cernet、校内地址走校园网，其它走宽带
 ```
-sudo -i
-bash
-export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && bash -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+#使用curl安装
+export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+```
+```
+#使用wget安装
+export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh  && sh /tmp/install.sh && source /etc/profile &> /dev/null
 ```
 2.仅校内地址走校园网，其它走宽带
 ```
-sudo -i
-bash
-export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && bash -c "$(curl -kfsSl $url/install_onlyschool.sh)" && source /etc/profile &> /dev/null
+#使用curl安装
+export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && sh -c "$(curl -kfsSl $url/install_onlyschool.sh)" && source /etc/profile &> /dev/null
+```
+```
+#使用wget安装
+export url='https://raw.githubusercontent.com/chinazyq123/ECUST-openwrt/main' && wget -q --no-check-certificate -O /tmp/install_onlyschool.sh $url/install_onlyschool.sh  && sh /tmp/install_onlyschool.sh && source /etc/profile &> /dev/null
 ```
 ## 说明
 IP文件夹IP段具有时效性，不保证也不可能长期有效  
